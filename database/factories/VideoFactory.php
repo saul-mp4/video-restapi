@@ -17,7 +17,11 @@ class VideoFactory extends Factory
     public function definition(): array
     {
         return [
-            //
+            'title' => fake()->sentence(3),
+            'author' => fake()->name(),
+            'duration' => fake()->randomNumber(4),
+            'format' => 'mp4',
+            'link' => fake()->url()
         ];
     }
 }

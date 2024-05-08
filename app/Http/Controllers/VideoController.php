@@ -13,7 +13,7 @@ class VideoController extends Controller
      */
     public function index()
     {
-        //
+        return Video::all();
     }
 
     /**
@@ -37,7 +37,7 @@ class VideoController extends Controller
      */
     public function show(Video $video)
     {
-        //
+        return Video::find($video);
     }
 
     /**
